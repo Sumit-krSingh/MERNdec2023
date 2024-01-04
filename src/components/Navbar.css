@@ -1,0 +1,26 @@
+.navbar-section{
+    min-width: 98vw;
+    min-height: 7rem;
+     padding: 5.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: rgb(38, 53, 97);
+    margin:0px 25px;
+    color: white;
+
+}
+
+ul{
+    display: flex;
+    gap: 3rem;
+    text-decoration: none;
+
+    
+
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
