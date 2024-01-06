@@ -1,5 +1,6 @@
-
+import { useAuth } from "../store/auth";
 export const About =() =>{
+  const {user} =useAuth();
     return(
         <>
         <div className="container">
@@ -11,9 +12,9 @@ export const About =() =>{
                         height="300" />
                     </div>
                     <div className="hero-content">
-                        <p>We are here to help your</p>
+                        <p>{user ? `we are here to help your - ${user.username}`:`null`}</p>
 
-                        <h1>Get Start Today</h1>
+                        <h1>Why Choose Us ?</h1>
 
                         <p>
                 Expertise: Our team consists of experienced IT professionals who
