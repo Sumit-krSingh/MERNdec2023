@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { toast } from 'react-toastify';
 
 
 export const Login =() =>{
@@ -37,10 +38,12 @@ export const Login =() =>{
                 body:JSON.stringify(user)
             });
             console.log("login",response);
-
+            // console.log("res from server",res_data);
+            
+            
             if(response.ok){
-                alert("login successful");
                 const res_data =  await response.json();
+                toast.success("login successful");
                 storeTokenInLS(res_data.token)
                 setUser({
                     email:"",
@@ -48,7 +51,7 @@ export const Login =() =>{
                 });
                 navigate("/");
             }else{
-                alert("invalide crendential");
+                toast.error("invalide data");
             }
             
         } catch (error) {

@@ -408,6 +408,31 @@ a.active {
   }
 }
 
+/* admin users page styling */
+
+td{
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--dark-color);
+  width: 30rem;
+  border: #242424 solid 1px;
+
+}
+
+table{
+  background: whitesmoke;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  color: #242424;
+
+  & th{
+    font-size: 2.7rem;
+  }
+}
+
 /* end here */
 
 
