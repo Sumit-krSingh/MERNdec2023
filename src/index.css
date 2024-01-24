@@ -57,7 +57,7 @@ label,
 input,
 textarea {
   font-size: 2rem;
-  line-height: 1.56;
+  line-height: 1.56rem;
   letter-spacing: 0.1rem;
   word-spacing: 0.06rem;
 }
@@ -241,8 +241,8 @@ a.active {
 
   & input,
   textarea {
-    width: 80%;
-    padding: 0.6rem 2.2rem;
+    width: 120%;
+    padding: 0.6rem 1.2rem;
 
   }
 
